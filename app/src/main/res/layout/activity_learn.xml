@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".LearnActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/Tv_Question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#363A43"
+            android:textSize="22sp"
+            android:text="What is the value of X here ? " />
+        <TextView
+            android:id="@+id/Tv_Question1Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#363A43"
+            android:textSize="22sp"
+            android:text="X =  5 + 7"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/Tv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"
+                />
+
+            <TextView
+                android:id="@+id/Tv_progressBarScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#7A8089"
+                android:textSize="14sp"
+                android:text="0/10" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Tv_Choice1Q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:background="@drawable/optionborder"
+            android:text="The value of X equal 10" />
+        <TextView
+            android:id="@+id/Tv_Choice2Q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:background="@drawable/optionborder"
+            android:text="The value of X equal 13" />
+
+        <TextView
+            android:id="@+id/Tv_Choice3Q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:background="@drawable/optionborder"
+            android:text="The value of X equal 12"
+            />
+
+
+        <Button
+            android:id="@+id/btn_Submit_Questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/design_default_color_primary"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:onClick="btnSubmitOnClickQuestions"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

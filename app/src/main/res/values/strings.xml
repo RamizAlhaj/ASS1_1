@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ASS1</string>
+    <string name="hello_welcome_dear">Hello, Welcome Dear</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+</resources>
